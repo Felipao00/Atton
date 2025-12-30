@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aton - Landing Pages Profissionais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+</head>
+<body>
+    <!-- Navegação -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-3d">ATON</span>
+                <span class="logo-sub">Web Studio</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#plans">Planos</a></li>
+                <li><a href="#updates">Atualização</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#contact" class="cta-button">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section com 3D -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Landing Pages</span>
+                    <span class="title-line gradient-text">Revolucionárias</span>                    
+                </h1>
+                <p class="hero-subtitle">Criamos experiências digitais imersivas que convertem visitantes em clientes e impressionam desde o primeiro clique.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-headset"></i> Solicitar Orçamento
+                    </a>
+                    <a href="#plans" class="btn-secondary">
+                        <i class="fas fa-shopping-cart"></i> Conferir Planos
+                    </a>
+                </div>
+            </div>
+        
+            <!-- Container 3D -->
+            <div id="scene-container" class="scene-container"></div>
+        </div>
+    </section>
+
+    <!-- Serviços -->
+    <section id="services" class="services">
+        <div class="section-header">
+            <h2 class="section-title">Nossos <span class="highlight">Serviços</span></h2>
+            <p class="section-subtitle">Oferecemos soluções completas para sua presença digital</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <h3>Landing Pages Profissionais</h3>
+                <p>Criamos páginas com elementos tridimensionais interativos que impressionam e engajam seus visitantes.</p>
+                <div class="service-features">
+                    <span>Interatividade</span>
+                    <span>Animações</span>
+                    <span>Experiência Imersiva</span>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Otimização de Conversão</h3>
+                <p>Desenvolvemos estratégias e designs focados em converter visitantes em leads e clientes.</p>
+                <div class="service-features">
+                    <span>A/B Testing</span>
+                    <span>CTAs Eficientes</span>
+                    <span>Análise de Dados</span>
+                </div>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Design Responsivo</h3>
+                <p>Garantimos que sua landing page funcione perfeitamente em todos os dispositivos e tamanhos de tela.</p>
+                <div class="service-features">
+                    <span>Mobile-First</span>
+                    <span>Tablet Otimizado</span>
+                    <span>Desktop Perfeito</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Empresas que Confiam na Aton -->
+    <section id="clients" class="clients-section">
+        <div class="section-header">
+            <h2 class="section-title">Empresas que <span class="gradient-text">Confiam</span> na Aton</h2>
+            <p class="section-subtitle">Já ajudamos empresas de diversos segmentos a alcançarem resultados extraordinários</p>
+        </div>
+        
+        <div class="clients-stats">
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="150">150+</h3>
+                    <p class="stat-label">Projetos Entregues</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-user-check"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="120">120+</h3>
+                    <p class="stat-label">Clientes Satisfeitos</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="45">45%</h3>
+                    <p class="stat-label">Aumento Médio em Conversões</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="stat-content">
+                    <h3 class="stat-number" data-count="99">99.9%</h3>
+                    <p class="stat-label">Uptime Garantido</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Carrossel de Empresas -->
+    <div class="clients-carousel">
+        <div class="carousel-container">
+            <div class="carousel-wrapper">
+                <div class="carousel-track infinite">
+                    <!-- Logo 1 -->
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>TechCorp Solutions</h3>
+                        <p>Tecnologia & Inovação</p>
+                        <div class="feature-tag">TECNOLOGIA</div>
+                    </div>
+                    
+                    <!-- Logo 2 -->
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>ModaStyle</h3>
+                        <p>Moda & E-commerce</p>
+                        <div class="feature-tag">MODA</div>
+                    </div>
+                    
+                    <!-- Logo 3 -->
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Vida Saudável</h3>
+                        <p>Saúde & Bem-estar</p>
+                        <div class="feature-tag">SAÚDE</div>
+                    </div>
+                    
+                    <!-- Logo 4 -->
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>EduTech Brasil</h3>
+                        <p>Educação Online</p>
+                        <div class="feature-tag">EDUCAÇÃO</div>
+                    </div>
+                    
+                    <!-- Logo 5 -->
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>EcoSustentável</h3>
+                        <p>Sustentabilidade</p>
+                        <div class="feature-tag">SUSTENTABILIDADE</div>
+                    </div>
+                    
+                    <!-- Logo 6 -->
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Gourmet Express</h3>
+                        <p>Gastronomia</p>
+                        <div class="feature-tag">GASTRONOMIA</div>
+                    </div>
+                    
+                    <!-- DUPLICA os slides para efeito infinito contínuo -->
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>TechCorp Solutions</h3>
+                        <p>Tecnologia & Inovação</p>
+                        <div class="feature-tag">TECNOLOGIA</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>ModaStyle</h3>
+                        <p>Moda & E-commerce</p>
+                        <div class="feature-tag">MODA</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3>Vida Saudável</h3>
+                        <p>Saúde & Bem-estar</p>
+                        <div class="feature-tag">SAÚDE</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>EduTech Brasil</h3>
+                        <p>Educação Online</p>
+                        <div class="feature-tag">EDUCAÇÃO</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>EcoSustentável</h3>
+                        <p>Sustentabilidade</p>
+                        <div class="feature-tag">SUSTENTABILIDADE</div>
+                    </div>
+                    
+                    <div class="carousel-slide">
+                        <div class="logo-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Gourmet Express</h3>
+                        <p>Gastronomia</p>
+                        <div class="feature-tag">GASTRONOMIA</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Planos -->
+    <section id="plans" class="plans">
+        <div class="section-header">
+            <h2 class="section-title">Planos <span class="highlight">Exclusivos</span></h2>
+            <p class="section-subtitle">Escolha o plano perfeito para sua landing page revolucionária</p>
+        </div>
+        
+        <div class="plans-container">
+            <div class="plans-grid">
+                <!-- Plano Básico -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="plan-name">Plano Básico</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">419,90</span>
+                            <span class="period">/projeto</span>
+                        </div>
+                        <p class="plan-description">Perfeito para negócios que estão começando</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-lock-open"></i> Design Responsivo Moderno</li>
+                            <li><i class="fas fa-lock-open"></i> 1 Página Principal</li>
+                            <li><i class="fas fa-lock-open"></i> Formulário de Contato</li>
+                            <li><i class="fas fa-lock-open"></i> Hospedagem e Domínio .app inclusos</li>
+                            <li><i class="fas fa-lock-open"></i> Suporte por 30 dias</li>
+                            <li class="not-included"><i class="fas fa-lock"></i> Elementos 3D</li>
+                            <li class="not-included"><i class="fas fa-lock"></i> Animações Avançadas</li>
+                            <li class="not-included"><i class="fas fa-lock"></i> Integração com CRM</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-shopping-cart"></i> Aquirir Agora
+                        </a>
+                    </div>
+                    
+                    <div class="plan-badge">ADQUIRA JÁ</div>
+                </div>
+                
+                <!-- Plano Profissional (Destaque) -->
+                <div class="plan-card featured">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <h3 class="plan-name">Plano Pro</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">829,90</span>
+                            <span class="period">/projeto</span>
+                        </div>
+                        <p class="plan-description">Para empresas que querem se destacar</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-lock-open"></i> Até 5 páginas</li>
+                            <li><i class="fas fa-lock-open"></i> Elementos 3D Interativos</li>
+                            <li><i class="fas fa-lock-open"></i> Animações Personalizadas</li>
+                            <li><i class="fas fa-lock-open"></i> 3 Revisões de Design</li>
+                            <li><i class="fas fa-lock-open"></i> SEO Avançado</li>
+                            <li><i class="fas fa-lock-open"></i> Integração com Google Analytics</li>
+                            <li><i class="fas fa-lock-open"></i> Suporte por 60 dias</li>
+                            <li><i class="fas fa-lock-open"></i> Dashboard de Métricas</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fas fa-crown"></i> Quero me Destacar
+                        </a>
+                    </div>
+                    
+                    <div class="plan-badge">POPULAR</div>
+                </div>
+                
+                <!-- Plano Enterprise -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="plan-name">Plano Bussiness</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">1.399,90</span>
+                            <span class="period">/projeto</span>
+                        </div>
+                        <p class="plan-description">Solução completa para grandes empresas</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-lock-open"></i> Landing Page completa</li>
+                            <li><i class="fas fa-lock-open"></i> Cena 3D Personalizada</li>
+                            <li><i class="fas fa-lock-open"></i> Design Exclusivo</li>
+                            <li><i class="fas fa-lock-open"></i> Integração com CRM/ERP</li>
+                            <li><i class="fas fa-lock-open"></i> Sistema de Leads Avançado</li>
+                            <li><i class="fas fa-lock-open"></i> A/B Testing</li>
+                            <li><i class="fas fa-lock-open"></i> Suporte Prioritário de 90 dias</li>
+                            <li><i class="fas fa-lock-open"></i> Treinamento da Equipe</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-shopping-cart"></i> Fale Conosco
+                        </a>
+                    </div>
+                    
+                    <div class="plan-badge">COMPLETO</div>
+                </div>
+            </div>
+            
+            <div class="plans-note">
+                <p><i class="fas fa-info-circle"></i> Todos os planos incluem domínio e hospedagem por 1 ano. Entre em contato para planos personalizados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pacotes de Atualização -->
+    <section id="updates" class="plans updates">
+        <div class="section-header">
+            <h2 class="section-title">Pacotes de <span class="gradient-text">Atualização</span></h2>
+            <p class="section-subtitle">Mantenha seu site sempre atualizado e seguro com nossos pacotes de manutenção</p>
+        </div>
+        
+        <div class="plans-container">
+            <div class="plans-grid">
+                <!-- Plano Avulso por Hora -->
+                <div class="plan-card hourly-plan">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="plan-name">Plano Avulso</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">49,90</span>
+                            <span class="period">/hora</span>
+                        </div>
+                        <p class="plan-description">Para alterações pontuais e rápidas</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-lock-open"></i> <strong>Cobrança por hora utilizada</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Mínimo 1 hora por serviço</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Orçamento prévio sem compromisso</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Controle em tempo real do tempo</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Todas as especialidades inclusas</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Sem taxa de adesão ou fidelidade</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Pagamento após a conclusão</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Prioridade na fila de atendimento</strong></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-shopping-cart"></i> Contratar Serviço
+                        </a>
+                    </div>
+                    
+                    <div class="plan-badge">FLEXÍVEL</div>
+                </div>
+                
+                <!-- Pacote Mensal (Destaque) -->
+                <div class="plan-card featured">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="plan-name">Atualização Mensal</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">189,90</span>
+                            <span class="period">/mês</span>
+                        </div>
+                        <p class="plan-description">Para quem precisa de manutenção completa e suporte prioritário</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-lock-open"></i> <strong>Tudo incluso</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Atualizações ilimitadas de conteúdo</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Backup diário automático</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Monitoramento 24/7 de segurança</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Suporte prioritário WhatsApp</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Otimização SEO avançada</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Análise de métricas detalhada</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Até 12 horas de manutenção/mês</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Relatórios semanais de performance</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Treinamento básico da equipe</strong></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <a href="#contact" class="btn-primary">
+                            <i class="fas fa-receipt"></i> Contratar Agora
+                        </a>
+                    </div>
+                    
+                    <div class="plan-badge">POPULAR</div>
+                </div>
+                
+                <!-- Pacote Bimestral -->
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <div class="plan-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h3 class="plan-name">Atualização Bimestral</h3>
+                        <div class="plan-price">
+                            <span class="currency">R$</span>
+                            <span class="amount">294,90</span>
+                            <span class="period">/Bimestre</span>
+                        </div>
+                        <p class="plan-description">Solução completa com economia no pacote Bimestral</p>
+                    </div>
+                    
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-lock-open"></i> <strong>Tudo do plano Mensal</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Economia de 15% vs mensal</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Revisão completa Bimestral</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Redesign parcial incluído</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Consultoria estratégica Bimestral</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Atualizações 3D gratuitas</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Suporte 24h emergencial</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Até 30 horas de manutenção/bimestre</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Garantia de uptime 99.9%</strong></li>
+                            <li><i class="fas fa-lock-open"></i> <strong>Relatório personalizado para CEO</strong></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="plan-cta">
+                        <a href="#contact" class="btn-secondary">
+                            <i class="fas fa-shopping-cart"></i> Contratar Serviço
+                        </a>
+                    </div>
+                    
+                    <div class="plan-badge">COMPLETO</div>
+                </div>
+            </div>
+            
+            <div class="plans-note">
+                <p><i class="fas fa-info-circle"></i> Todos os projetos incluem 30 dias de suporte após a criação do site.</p>
+            </div>
+            
+            <div class="updates-benefits">
+                <div class="benefit">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>Segurança Garantida</h4>
+                    <p>Proteção contra hackers e malwares</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-bolt"></i>
+                    <h4>Alta Performance</h4>
+                    <p>Otimização contínua de velocidade</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Resultados Mensuráveis</h4>
+                    <p>Relatórios detalhados de performance</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-headset"></i>
+                    <h4>Suporte Especializado</h4>
+                    <p>Equipe técnica disponível quando precisar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Carrossel de Recursos Técnicos -->
+<section class="features-carousel">
+    <div class="section-header">
+        <h2 class="section-title">Tecnologias <span class="highlight">Premium</span></h2>
+        <p class="section-subtitle">Todos os nossos sites incluem recursos avançados de qualidade</p>
+    </div>
+    
+    <div class="carousel-container">
+        <div class="carousel-wrapper">
+            <div class="carousel-track infinite">
+                <!-- Slides originais (8 itens) -->
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Certificado SSL</h3>
+                    <p>Segurança HTTPS garantida para proteção dos dados dos seus clientes</p>
+                    <div class="feature-tag">SEGURANÇA</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Hospedagem Premium</h3>
+                    <p>Servidores otimizados com 99.9% de uptime e alta velocidade</p>
+                    <div class="feature-tag">PERFORMANCE</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Otimizado</h3>
+                    <p>Estrutura otimizada para mecanismos de busca desde o início</p>
+                    <div class="feature-tag">VISIBILIDADE</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Design Responsivo</h3>
+                    <p>Funciona perfeitamente em smartphones, tablets e desktops</p>
+                    <div class="feature-tag">RESPONSIVO</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-hdd"></i>
+                    </div>
+                    <h3>Backup Automático</h3>
+                    <p>Seus dados protegidos com backups diários automáticos</p>
+                    <div class="feature-tag">PROTEÇÃO</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Suporte Técnico</h3>
+                    <p>Equipe especializada disponível para ajudar quando precisar</p>
+                    <div class="feature-tag">SUPORTE</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Google Analytics</h3>
+                    <p>Integração pronta para monitorar o desempenho do seu site</p>
+                    <div class="feature-tag">ANÁLISE</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>Otimização de Velocidade</h3>
+                    <p>Sites rápidos com carregamento otimizado para melhor experiência</p>
+                    <div class="feature-tag">VELOCIDADE</div>
+                </div>
+                
+                <!-- DUPLICA os slides para efeito infinito contínuo -->
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Certificado SSL</h3>
+                    <p>Segurança HTTPS garantida para proteção dos dados dos seus clientes</p>
+                    <div class="feature-tag">SEGURANÇA</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Hospedagem Premium</h3>
+                    <p>Servidores otimizados com 99.9% de uptime e alta velocidade</p>
+                    <div class="feature-tag">PERFORMANCE</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO Otimizado</h3>
+                    <p>Estrutura otimizada para mecanismos de busca desde o início</p>
+                    <div class="feature-tag">VISIBILIDADE</div>
+                </div>
+                
+                <div class="carousel-slide">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Design Responsivo</h3>
+                    <p>Funciona perfeitamente em smartphones, tablets e desktops</p>
+                    <div class="feature-tag">RESPONSIVO</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carousel-note">
+        <p><i class="fas fa-info-circle"></i> Todos esses recursos estão incluídos em todos os nossos planos de desenvolvimento</p>
+    </div>
+</section>
+
+    <!-- Sobre -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2 class="section-title">Por que escolher a <span class="highlight">Aton</span>?</h2>
+                <p>Somos especialistas em criar landing pages que não só impressionam visualmente, mas também geram resultados reais para o seu negócio.</p>
+                
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="fas fa-bolt"></i>
+                        <div>
+                            <h4>Velocidade de Carregamento</h4>
+                            <p>Otimizamos cada elemento para garantir que sua página seja rápida, mesmo com elementos 3D.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-chart-line"></i>
+                        <div>
+                            <h4>Foco em Conversão</h4>
+                            <p>Cada elemento é projetado estrategicamente para guiar o visitante até a ação desejada.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature">
+                        <i class="fas fa-paint-brush"></i>
+                        <div>
+                            <h4>Design Exclusivo</h4>
+                            <p>Criamos designs personalizados que refletem a identidade única da sua marca.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+<!-- FAQ com Elementos 3D Modernos -->
+<section id="faq" class="faq-section">
+    <div class="section-header">
+        <h2 class="section-title">FAQ - <span class="gradient-text">Perguntas Frequentes</span></h2>
+        <p class="section-subtitle">As principais dúvidas sobre nossos serviços</p>
+    </div>
+    
+    <div class="faq-container">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item" data-faq-id="1">
+            <div class="faq-question">
+                <div class="faq-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Quanto tempo para criar minha landing page?</h3>
+                <div class="faq-indicator">
+                    <span class="indicator-line"></span>
+                    <span class="indicator-line"></span>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>O prazo varia conforme a complexidade:</p>
+                    <ul>
+                        <li><strong>Básico:</strong> 5-7 dias</li>
+                        <li><strong>Pro:</strong> 10-14 dias</li>
+                        <li><strong>Business:</strong> 15-20 dias</li>
+                    </ul>
+                    <p>Incluímos 2 revisões durante o processo.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 2 -->
+        <div class="faq-item" data-faq-id="2">
+            <div class="faq-question">
+                <div class="faq-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Funciona bem no celular?</h3>
+                <div class="faq-indicator">
+                    <span class="indicator-line"></span>
+                    <span class="indicator-line"></span>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p><strong>Sim, perfeitamente!</strong> Todas nossas páginas são:</p>
+                    <ul>
+                        <li>Desenvolvidas com abordagem Mobile-First</li>
+                        <li>Otimizadas para toque e gestos</li>
+                        <li>Testadas em diversos dispositivos</li>
+                        <li>Carregamento rápido mesmo em 4G</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 3 -->
+        <div class="faq-item" data-faq-id="3">
+            <div class="faq-question">
+                <div class="faq-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h3>Posso fazer alterações depois?</h3>
+                <div class="faq-indicator">
+                    <span class="indicator-line"></span>
+                    <span class="indicator-line"></span>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Claro! Temos 3 opções:</p>
+                    <ul>
+                        <li><strong>Pacote Mensal:</strong> R$ 189,90/mês - Alterações ilimitadas</li>
+                        <li><strong>Pacote Bimestral:</strong> R$ 294,90/bimestre - Mais econômico</li>
+                        <li><strong>Avulso:</strong> R$ 49,90/hora - Para mudanças pontuais</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- FAQ Item 4 -->
+        <div class="faq-item" data-faq-id="4">
+            <div class="faq-question">
+                <div class="faq-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>É seguro? Que garantias tenho?</h3>
+                <div class="faq-indicator">
+                    <span class="indicator-line"></span>
+                    <span class="indicator-line"></span>
+                </div>
+            </div>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p><strong>100% seguro!</strong> Incluímos:</p>
+                    <ul>
+                        <li>Certificado SSL gratuito</li>
+                        <li>Backup automático diário</li>
+                        <li>Firewall contra ataques</li>
+                        <li>Monitoramento 24/7</li>
+                        <li>Suporte técnico especializado</li>
+                    </ul>
+                    <p>E ainda: <strong>7 dias de garantia</strong> após entrega.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="faq-cta">
+        <p>Ainda tem dúvidas? <a href="#contact" class="faq-contact-link">Fale diretamente conosco →</a></p>
+    </div>
+</section>
+
+    <!-- Contato -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2 class="section-title">Fale <span class="highlight">Conosco</span></h2>
+            <p class="section-subtitle">Entre em contato e transforme sua ideia em realidade</p>
+        </div>
+        
+        <div class="contact-cards">
+            <!-- Card WhatsApp -->
+            <div class="contact-card whatsapp-card">
+                <div class="contact-card-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+                <h3 class="contact-card-title">WhatsApp</h3>
+                <p class="contact-card-description">Para orçamentos detalhados e propostas</p>
+                <div class="contact-card-info">
+                    <p><strong>Horário:</strong> 9h às 18h (Seg-Sex)</p>
+                    <p><strong>Respondemos em até:</strong> 24 horas úteis</p>
+                </div>
+                <a href="https://wa.me/5588993678250?text=Olá! Gostaria de um orçamento personalizado para o meu negócio" 
+                   target="_blank" 
+                   class="contact-card-button whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Conversar no WhatsApp
+                </a>
+                <div class="whatsapp-pulse"></div>
+            </div>
+            
+            <!-- Card Atendimento -->
+            <div class="contact-card hours-card">
+                <div class="contact-card-icon">
+                    <i class="fas fa-globe-americas"></i>
+                </div>
+                <h3 class="contact-card-title">Atendimento Para América Latina</h3>
+                <p class="contact-card-description">Atendemos toda a América Latina em português e espanhol</p>
+                <div class="contact-card-info">
+                    <p><strong>Horário Comercial:</strong></p>
+                    <p>9h às 18h (Horário de Brasília)</p>
+                    <p>Segunda a Sexta-feira</p>
+                </div>
+                <div class="time-zones">
+                    <div class="time-zone">
+                        <span class="country">🇧🇷 Brasil</span>
+                        <span class="time">BRT (UTC-3)</span>
+                    </div>
+                    <div class="time-zone">
+                        <span class="country">🇦🇷 Argentina</span>
+                        <span class="time">ART (UTC-3)</span>
+                    </div>
+                    <div class="time-zone">
+                        <span class="country">🇨🇱 Chile</span>
+                        <span class="time">CLT (UTC-4)</span>
+                    </div>
+                    <div class="time-zone">
+                        <span class="country">🇨🇴 Colômbia</span>
+                        <span class="time">COT (UTC-5)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Card Email -->
+            <div class="contact-card email-card">
+                <div class="contact-card-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3 class="contact-card-title">Email</h3>
+                <p class="contact-card-description">Para conversas mais detalhadas</p>
+                <div class="contact-card-info">
+                    <p><strong>Respondemos em até:</strong> 24 horas úteis</p>
+                    <p><strong>Atendimento:</strong> Segunda a Sexta</p>
+                </div>
+                <a href="mailto:equipeatonsolucoes0@gmail.com?subject=Orçamento Landing Page" 
+                   class="contact-card-button email-btn">
+                    <i class="fas fa-envelope"></i> Enviar Email
+                </a>
+                <div class="contact-email">
+                    <p><strong>Email:</strong> equipeatonsolucoes0@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-3d">ATON</span>
+                <span class="logo-sub">Web Studio</span>
+                <p>Criando experiências digitais revolucionárias que convertem desde 2025</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#plans">Planos</a></li>
+                    <li><a href="#updates">Atualização</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-social">
+                <h4>Conecte-se</h4>
+                <div class="social-icons">
+                    <a href="https://t.me/Ryu_Pythonista" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+                <p class="copyright">© 2025 Aton Web Studio. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
