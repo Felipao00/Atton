@@ -827,3 +827,42 @@
         padding: 30px 20px;
     }
 }
+
+/* CORREÇÃO DEFINITIVA DOS ÍCONES - ÚLTIMA PRIORIDADE */
+
+/* Remove TODAS as heranças */
+#plans .plan-gestao .plan-features li i,
+#plans .plan-gestao .plan-features h4 i,
+.plans-gestao .plan-gestao .plan-features li i,
+.plans-gestao .plan-gestao .plan-features h4 i {
+    color: #25D366 !important;
+}
+
+/* Ícones de check específicos */
+#plans .plan-gestao .fa-check-circle,
+#plans .plan-gestao .fa-check,
+.plans-gestao .fa-check-circle,
+.plans-gestao .fa-check {
+    color: #25D366 !important;
+}
+
+/* Ícones de não incluído */
+#plans .plan-gestao .fa-times-circle,
+.plans-gestao .fa-times-circle {
+    color: #666 !important;
+}
+
+/* Garante que todos os ícones dos planos fiquem verdes */
+section#plans .plan-gestao .plan-features i,
+section.plans-gestao .plan-gestao .plan-features i {
+    color: #25D366 !important;
+}
+
+/* Para o plano featured também */
+.plan-gestao.featured .plan-features i.fa-check-circle {
+    color: #25D366 !important;
+}
+
+.plan-gestao.featured .plan-features i.fa-times-circle {
+    color: #666 !important;
+}
